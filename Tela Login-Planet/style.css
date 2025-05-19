@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2? family= Noto+Sans:wght@400;800 & family= Roboto & display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.main-login{
+    display: flex;
+    background: #ADD8E6;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    font-size: 3vw;
+    color: rgba(2, 4, 109, 0.836);
+}
+.image-animated {
+    width: 35vw;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.login-user {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #87CEFA;
+    border-radius: 30px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+.login-user > h1 {
+color: #172935;
+font-weight: 800;
+margin: 0;
+}
+
+
+.text-field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.text-field > input {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    background: #ADD8E6;
+    color: aliceblue;
+    font-size: 16px;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text-field > label {
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+
+.button {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #ADD8E6;
+    color: aliceblue;
+    box-shadow: 0px 10px 40px #00000056;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+
+
+@media only screen and (max-width:950px){
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
+    
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 50vh;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}
+
